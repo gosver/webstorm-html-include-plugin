@@ -1,0 +1,19 @@
+<idea-plugin>
+    <id>custom.html.include</id>
+    <name>HTML Include Support</name>
+    <vendor>Custom</vendor>
+    <version>1.0.0</version>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Твоя рабочая навигация по Ctrl+Click -->
+        <psi.referenceContributor
+            implementation="custom.html.include.HtmlIncludeReferenceContributor"/>
+
+        <!-- Глушилка для красной ошибки Unknown html tag -->
+        <lang.inspectionSuppressor 
+            language="HTML" 
+            implementationClass="custom.html.include.HtmlIncludeInspectionSuppressor"/>
+    </extensions>
+</idea-plugin>

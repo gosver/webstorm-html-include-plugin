@@ -1,0 +1,20 @@
+{
+    "name": "html-include",
+    "version": "1.0.0",
+    "contributions": {
+      "html": {
+        "tags": [
+          {
+            "name": "include",
+            "description": "Include HTML file",
+            "attributes": [
+              {
+                "name": "src",
+                "description": "Path to included HTML file"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
